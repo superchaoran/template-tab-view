@@ -1,0 +1,10 @@
+{
+"reponame":"template-tab-view",
+"title":"Tab View App",
+"tooltip":"This template can be used for simple tab view application that has tabs at the bottom to switch views, this template can be used for creating applications similar to Phone app, Facebook* app or Instagram* app.",
+"description":"This template can be used for simple tab view application that has tabs at the bottom to switch views, this template can be used for creating applications similar to Phone app, Facebook* app or Instagram* app.",
+"articleUrl":"http://software.intel.com/en-us/html5/articles/templates-to-get-started-with-html5-mobile-app-development",
+"visible" : "true",
+"keywords":[""],
+"highlights" : [""]
+}
