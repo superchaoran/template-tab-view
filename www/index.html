@@ -1,86 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tab View App template</title>
-<!--
-    This template can be used for simple tab view application that has tabs at the bottom to switch views, for applications like Phone app, Facebook App or Instagram app.
---> 
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
-    
-    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
-    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
-    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
-
-    <!-- phantom library, needed for XDK "legacy" container api calls -->
-    <script src="intelxdk.js"></script>
-    <!-- phantom library, needed for Cordova api calls -->
-    <script src="cordova.js"></script>
-    <!-- phantom library, needed for XDK "legacy" container CORS -->
-    <script src="xhr.js"></script>
-    
-    <script>
-        var onDeviceReady=function(){                             // called when Cordova is ready
-           if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
-               $.ui.launch(); 
-               navigator.splashscreen.hide() ;                 // hide splash screen
-            }
-        } ;
-        document.addEventListener("deviceready", onDeviceReady, false) ;
-    </script>
-    
-    <script>   
-        $.ui.autoLaunch = false; 
-        $.ui.animateHeaders = false;
-                
-        $(document).ready(function(){
-            $.ui.launch();
-        });
-    </script>    
+    <meta charset="utf-8">
+    <title>Cocos2d-html5 Hello World test</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        /* following code make sure user won't see selection in the app */
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        /* default styles for body */
+        body {
+            padding:0;
+            margin: 0;
+            background: #000;
+        }
+    </style>
 </head>
-<body> 
-<div id="afui">
-    
-    <div id="content" style=""> 
-        
-    <!--Tab View Pages-->
-        <div class="panel" title="Home" id="page1" data-tab="tab1" selected="true">
-            <header>
-                <h1>Home</h1>
-            </header>
-            <p>This is view for first Tab</p>
-        </div>
-        
-        <div class="panel" title="Favorites" id="page2" data-tab="tab2">
-            <header>
-                <h1>Favorites</h1>
-            </header>
-            <p>This is view for second Tab</p>
-        </div>
-        
-        <div class="panel" title="Messages" id="page3" data-tab="tab3">
-            <header>
-                <h1>Messages</h1>
-            </header>
-            <p>This is view for third Tab</p>
-        </div>
-        
-        <div class="panel" title="Profile" id="page4" data-tab="tab4">
-            <header>
-                <h1>Profile</h1>
-            </header>
-            <p>This is view for fourth Tab</p>
-        </div>
-        
-    </div>
-    
-    <!--Footer with Tabs or Navigation bar -->
-    <div id="navbar">
-        <a href="#page1" id='tab1' class="icon home" data-transition="none">Home</a>
-        <a href="#page2" id='tab2' class="icon heart" data-transition="none">Favorites</a>
-        <a href="#page3" id='tab3' class="icon chat" data-transition="none">Messages</a>
-        <a href="#page4" id='tab4' class="icon user" data-transition="none">Profile</a>
-    </div>
-
-</div>
+<body>
+<!-- Main stage for rendering game scenes -->
+<canvas id="gameCanvas"></canvas>
+<!-- Load Cocos2d HTML5 engine -->
+<script src="frameworks/cocos2d-html5/CCBoot.js"></script>
+<!-- Load the main script of the game -->
+<script src="main.js"></script>
 </body>
-</html>    
+</html>
