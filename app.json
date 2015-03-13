@@ -1,23 +1,32 @@
 {
-  "reponame": "template-cocos2d-3x-portrait",
-  "sourceURL": "",
-  "title": "Cocos2d-JS 3.x Game Portrait Template",
-  "abbr": "",
-  "tooltip": "A blank template for creating games from Cocos2d-js 3.x",
-  "type": "",
-  "description": "Use this template to start with a blank portrait Game from Cocos2d-js 3.x",
-  "keywords": [ "Blank Project","Game" ],
-  "visible": "true",
-  "highlights": ["Cocos2d", "Game"],
-  "articleUrl": "",
-  "iconUrl": "",
-  "screenshotUrl": "",
-  "zipUrl": "",
-  "apppreview": "false",
-  "appname": "",
-  "relname": "",
-  "mobile": "false",
-  "relationship": "cocos2d",
-  "gameEngine": { "name": "cocos2d", "version": "3.x" },
-  "projectTypeName": "com.intel.xdk.projecttype.webapp"
+   "zipUrl" : "",
+   "visible" : "true",
+   "screenshotUrl" : "",
+   "type" : "",
+   "title" : "Cocos2d-JS 3.x Game Portrait Template",
+   "relationship" : "cocos2d",
+   "articleUrl" : null,
+   "highlights" : [
+      "Cocos2d",
+      "Game"
+   ],
+   "sourceURL" : "",
+   "iconUrl" : "",
+   "mobile" : "false",
+   "relName" : "",
+   "repoName" : "template-cocos2d-3x-portrait",
+   "tooltip" : "A blank template for creating games from Cocos2d-js 3.x",
+   "gameEngine" : {
+      "name" : "cocos2d",
+      "version" : "3.x"
+   },
+   "appName" : "",
+   "appPreview" : "false",
+   "keywords" : [
+      "Blank Project",
+      "Game"
+   ],
+   "abbr" : "",
+   "description" : "Use this template to start with a blank portrait Game from Cocos2d-js 3.x",
+   "projectTypeName" : "com.intel.xdk.projecttype.webapp"
 }
