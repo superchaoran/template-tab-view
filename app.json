@@ -9,5 +9,5 @@
 "keywords":[""],
 "highlights" : [""],
 "relationship":"tab view",
-"projectTypeName": "com.intel.xdk.projecttype.webapp"
+"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 }
