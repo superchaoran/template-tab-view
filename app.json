@@ -1,13 +1,15 @@
 {
-"repoName":"template-tab-view",
-"title":"Tab View App",
-"tooltip":"Use this template to provide a simple tab view application that has tabs at the bottom to switch views. For example, create a Phone app, Facebook* app or Instagram* app.",
-"description":"Use this template to provide a simple tab view application that has tabs at the bottom to switch views. For example, create a Phone app, Facebook* app or Instagram* app.",
-"articleUrl":"https://software.intel.com/en-us/xdk/docs/templates-to-get-started-with-xdk-app-development",
-"visible" : true,
-"sortWeight":"0.3",
-"keywords":[""],
-"highlights" : [""],
-"relationship":"tab view",
-"projectTypeName": "com.intel.xdk.projecttype.webapp"
+    "repoName":"template-tab-view",
+    "title":"Tab View App",
+    "tooltip":"Use this template to provide a simple tab view application that has tabs at the bottom to switch views. For example, create a Phone app, Facebook* app or Instagram* app.",
+    "description":"Use this template to provide a simple tab view application that has tabs at the bottom to switch views. For example, create a Phone app, Facebook* app or Instagram* app.",
+    "articleUrl":"https://software.intel.com/en-us/xdk/docs/templates-to-get-started-with-xdk-app-development",
+    "section" : "templates",
+    "group" : "other",
+    "visible" : true,
+    "sortWeight":"0.3",
+    "keywords":[""],
+    "highlights" : [""],
+    "relationship":"tab view",
+    "projectTypeName": "com.intel.xdk.projecttype.webapp"
 }
