@@ -10,13 +10,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" type="text/css" href="../www/appframework/build/icons.css" />
-    <link rel="stylesheet" type="text/css" href="../www/appframework/build/af.ui.css" />
 
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
 
-     <script type="text/javascript" charset="utf-8" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../www/appframework/build/appframework.ui.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>  
 
 </head>
 
@@ -30,40 +30,37 @@
         <h1>Starting app</h1>
     </div>
 
-    <div class="view" id="mainview">
+    <div class="view">
         <header>
-            <h1>Tab View</h1>
+            <h1>Title</h1>
         </header>
 
         <div class="pages">
 
-         <!--Tab View Pages-->
-        <div class="panel" data-title="Home" id="main" data-selected="true">
-            This is view for first Tab
-        </div>
+            <!--Tab View Pages-->
+            <div class="panel" data-title="Home" id="tab1" data-selected="true">
+                This is view for first Tab
+            </div>
 
-        <div class="panel" data-title="Favorites" id="foobar" >
-            This is view for second Tab
-            <br>
-            <br>
-             <a href="#about" class="button" data-tab='tab3' data-transition="slide-left">About</a>
-        </div>
+            <div class="panel" data-title="Favorites" id="tab2" >
+                This is view for second Tab
+            </div>
 
-        <div class="panel" data-title="Messages" id="about">
-            This is view for third Tab
-        </div>
+            <div class="panel" data-title="Messages" id="tab3">
+                This is view for third Tab
+            </div>
 
-        <div class="panel" data-title="Profile" id="test">
-            This is view for fourth Tab
-        </div>
+            <div class="panel" data-title="Profile" id="tab4">
+                This is view for fourth Tab
+            </div>
 
         </div>
 
         <footer>
-            <a href="#main" class="icon home" id='tab1' >Main</a>
-            <a href="#foobar" class="icon heart" id='tab2' data-transition="up-reveal">Foobar</a>
-            <a href="#about" class="icon html5" id='tab3' data-transition="slide-left">About</a>
-            <a href="#test" class="icon trash" id='tab4' data-transition="none">test</a>
+            <a href="#tab1" class="icon home" onclick="$.afui.clearHistory()">Home</a>
+            <a href="#tab2" class="icon heart" onclick="$.afui.clearHistory()">Favorites</a>
+            <a href="#tab3" class="icon message" onclick="$.afui.clearHistory()">Messages</a>
+            <a href="#tab4" class="icon user" onclick="$.afui.clearHistory()">Profile</a>
         </footer>
     </div>
 
